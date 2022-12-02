@@ -29,7 +29,7 @@ contract PiggyBank2 {
     event errorEmptyingTheBank(uint value);
 
     modifier onlyOwner() {
-        require(msg.sender == owner, "You are not the owner.");
+        require(msg.sender == owner, "You are not the owner of this Piggy Bank contract.");
         _;
     }
 
